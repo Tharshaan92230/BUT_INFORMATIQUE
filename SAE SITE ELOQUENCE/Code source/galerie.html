@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+	 margin: 0;
+	 font-family: 'Roboto', sans-serif;
+	 font-size: 16px;
+}
+
+nav{
+    margin-bottom: 90px;
+}
+
+ .carousel {
+	 padding: 0px 20px;
+	 perspective: 500px;
+	 overflow: hidden;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+}
+ .carousel > * {
+	 flex: 0 0 auto;
+}
+ .carousel .figure {
+	 margin: 0;
+	 width: 500px;
+     height: 300px;
+	 transform-style: preserve-3d;
+	 transition: transform 0.5s;
+}
+ .carousel .figure video {
+	 width: 100%;
+	 box-sizing: border-box;
+	 padding: 0 0px;
+}
+ .carousel .figure video:not(:first-of-type) {
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+}
+ .carousel nav {
+	 display: flex;
+	 justify-content: center;
+	 margin: 20px 0 0;
+}
+ .carousel nav button {
+	 flex: 0 0 auto;
+	 margin: 0 5px;
+	 cursor: pointer;
+	 color: #333;
+	 background: none;
+	 border: 1px solid;
+	 letter-spacing: 1px;
+	 padding: 5px 10px;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  width: 40%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prec,
+.suiv {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.suiv {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prec:hover,
+.suiv:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+ 
+    </style>
+
+
+    <title class="titre">Concours d'éloquence - 17 juin 2022</title>
+</head>
+<body>
+    <div id="menu_traduction"></div>
+    <nav>
+        <ul>
+            <li><a href="accueil.html" class="accueil">Accueil</a></li>
+            <li><a class="presentation" href="accueil.html#para_invitation">Présentation</a></li>
+            <li><a class="galerie_trad" href="galerie.html">Galerie</a></li>
+            <li><a class="team" href="team.html">Team</a></li>
+            <li class="traduction"><a href="#"><img src="../Images/drapeau.png" alt=" Drapeau english" width="25px" height="25px"></a></li>
+          </ul>
+          
+   
+    </nav>
+
+    <p class="text-center"><i class="sujet">Le metavers, la vraie vie est-elle ailleurs ?</i> <br><span class="para1"> Les étudiants du département informatique ont presté sur ce sujet le 14 Avril 2022.</span></p>
+    <p class="text-center para2">Nous vous vous proposons quelques images ci-dessous</p>
+
+    
+    <h2 class="text-success text-center interviews">Les interviews</h2>
+<div class="carousel">
+
+<div class="carousel" data-gap="20" data-bfc>
+	<figure class="figure">
+        <video controls height="300px" width="500px">
+            <source src="../Videos/v1.MP4" type="video/mp4">
+        </video>
+        <video controls height="300px" width="500px">
+            <source src="../Videos/v2.MP4" type="video/mp4">
+        </video>
+        <video controls height="300px" width="500px">
+            <source src="../Videos/v3.MP4" type="video/mp4">
+        </video>
+        <video controls height="300px" width="500px">
+            <source src="../Videos/v4.MP4" type="video/mp4">
+        </video>
+        <video controls height="300px" width="500px">
+            <source src="../Videos/v5.MP4" type="video/mp4">
+        </video>
+        <video controls height="300px" width="500px">
+            <source src="../Videos/v6.MP4" type="video/mp4">
+        </video>
+        <video controls height="300px" width="500px">
+            <source src="../Videos/v7.MP4" type="video/mp4">
+        </video>
+        <video controls height="300px" width="500px">
+            <source src="../Videos/v8.MP4" type="video/mp4">
+        </video>
+        <video controls height="300px" width="500px">
+            <source src="../Videos/v9.MP4" type="video/mp4">
+        </video>
+
+       
+	</figure>
+	<nav>
+		<button class="nav prev">Précédent</button>
+		<button class="nav next">Suivant</button>
+	</nav>
+</div>
+<br>
+
+<h2 class="text-success text-center participants">Portrait des participants </h2>
+<br>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 9</div>
+    <img src="../Images/i1.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 9</div>
+    <img src="../Images/i2.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 9</div>
+    <img src="../Images/i3.jpeg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 9</div>
+    <img src="../Images/i4.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 9</div>
+    <img src="../Images/i5.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 9</div>
+    <img src="../Images/i6.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">7 / 6</div>
+    <img src="../Images/i7.jpeg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">8 / 9</div>
+    <img src="../Images/i8.jpeg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">9 / 9</div>
+    <img src="../Images/i9.jpeg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">Bonus</div>
+    <img src="../Images/i10.jpeg" style="width:100%">
+  </div>
+    
+  <a class="prec" onclick="plusSlides(-1)">❮</a>
+  <a class="suiv" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="../Images/i1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Teva">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../Images/i2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Ann">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../Images/i3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Brunella">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../Images/i4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Kaïs, gagnant">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../Images/i5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Keinan">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="../Images/i6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Tinhinane, gagnante">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../Images/i7.jpeg" style="width:100%" onclick="currentSlide(7)" alt="Oussama">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../Images/i8.jpeg" style="width:100%" onclick="currentSlide(8)" alt="David">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../Images/i9.jpeg" style="width:100%" onclick="currentSlide(9)" alt="Sylla">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../Images/i10.jpeg" style="width:100%" onclick="currentSlide(10)" alt="Les participants">
+    </div>
+  </div>
+</div>
+<br>
+
+    
+    
+
+
+
+
+
+
+
+
+<script src="js/bootstrap.js"></script>
+<script src="site.js"></script>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script>
+    window.addEventListener('load', () => {
+	var
+		carousels = document.querySelectorAll('.carousel')
+	;
+
+	for (var i = 0; i < carousels.length; i++) {
+		carousel(carousels[i]);
+	}
+});
+
+function carousel(root) {
+	var
+		figure = root.querySelector('figure'),
+		nav = root.querySelector('nav'),
+		images = figure.children,
+		n = images.length,
+		gap = root.dataset.gap || 0,
+		bfc = 'bfc' in root.dataset,
+		
+		theta =  2 * Math.PI / n,
+		currImage = 0
+	;
+	
+	setupCarousel(n, parseFloat(getComputedStyle(images[0]).width));
+	window.addEventListener('resize', () => { 
+		setupCarousel(n, parseFloat(getComputedStyle(images[0]).width)) 
+	});
+
+	setupNavigation();
+
+	function setupCarousel(n, s) {
+		var	
+			apothem = s / (2 * Math.tan(Math.PI / n))
+		;
+		
+		figure.style.transformOrigin = `50% 50% ${- apothem}px`;
+
+		for (var i = 0; i < n; i++)
+			images[i].style.padding = `${gap}px`;
+		for (i = 1; i < n; i++) {
+			images[i].style.transformOrigin = `50% 50% ${- apothem}px`;
+			images[i].style.transform = `rotateY(${i * theta}rad)`;
+		}
+		if (bfc)
+			for (i = 0; i < n; i++)
+				 images[i].style.backfaceVisibility = 'hidden';
+		
+		rotateCarousel(currImage);
+	}
+
+	function setupNavigation() {
+		nav.addEventListener('click', onClick, true);
+		
+		function onClick(e) {
+			e.stopPropagation();
+			
+			var t = e.target;
+			if (t.tagName.toUpperCase() != 'BUTTON')
+				return;
+			
+			if (t.classList.contains('next')) {
+				currImage++;
+			}
+			else {
+				currImage--;
+			}
+			
+			rotateCarousel(currImage);
+		}
+			
+	}
+
+	function rotateCarousel(imageIndex) {
+		figure.style.transform = `rotateY(${imageIndex * -theta}rad)`;
+	}
+	
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+
+</body>
+</html>
